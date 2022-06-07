@@ -1,5 +1,5 @@
 <script>
-    let title = "Welcome to Georges website!"
+    let title = "Just welcome!"
 </script>
 
 <svelte:head>
