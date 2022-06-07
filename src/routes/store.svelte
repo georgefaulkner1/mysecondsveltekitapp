@@ -22,7 +22,7 @@
 
     .title-block {
         margin: 0px auto;
-        width: 800px;
+        width: 600px;
         display: flex;
         justify-content: center;
     }
