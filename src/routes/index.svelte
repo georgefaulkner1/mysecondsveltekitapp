@@ -20,9 +20,12 @@
     const putLogin = async () => {
         try {
             const url = "https://my-first-express-app-675.herokuapp.com/"
-            const res = await axios.put(url, {
-                headers: {},
-                body: {test: false, name}
+            const res = await axios({
+                method: "post",
+                url,
+                data: {
+                    name
+                }
             })
             console.log(res)
         }catch(err){
