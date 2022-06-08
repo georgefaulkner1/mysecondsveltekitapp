@@ -33,7 +33,10 @@
                     name
                 }
             })
-            console.log(Handler(res))
+            if(res){
+                let response = Handler(res)
+                if(response.data.name) title = `Welcome ${response.data.name}`
+            }
         }catch(err){
             console.log("ERROR: ", err)
         }
