@@ -22,7 +22,7 @@
             const url = "https://my-first-express-app-675.herokuapp.com/"
             const res = await axios.put(url, {
                 headers: {},
-                params: {test: false, name}
+                body: {test: false, name}
             })
             console.log(res)
         }catch(err){
