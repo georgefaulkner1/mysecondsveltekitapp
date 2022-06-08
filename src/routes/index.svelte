@@ -1,6 +1,19 @@
 <script>
     let title = "Just welcome!"
     import { fade } from "svelte/transition"
+
+    async function loadData(){
+        try {
+            const url = "https://my-first-express-app-675.herokuapp.com/"
+            const res = await fetch(url)
+            const data = await res.json()
+            console.log(data)
+        }catch(err){
+            console.log("Error: ", err)
+        }
+    }
+    loadData()
+
 </script>
 
 <svelte:head>
