@@ -16,6 +16,12 @@
     }
     loadData()
 */
+    function Handler(data){
+        let res = {}
+        if(data.data) res.data = data.data
+        if(data.status) res.statusCode = data.status
+        return res
+    }
 
     const putLogin = async () => {
         try {
@@ -27,7 +33,7 @@
                     name
                 }
             })
-            console.log(res)
+            console.log(Handler(res))
         }catch(err){
             console.log("ERROR: ", err)
         }
